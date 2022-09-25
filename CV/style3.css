@@ -1,0 +1,153 @@
+* {
+    padding: 0px;
+    margin: 0cm;
+}
+
+body {
+    display: flex;
+    font-family: "Trirong", serif;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+
+}
+
+header {
+    color: #b3b3b1;
+    height: 4rem;
+    position: fixed;
+    top: 1rem;
+    left: 0.5rem;
+}
+
+.left_content {
+
+    background-color: black;
+    width: 25rem;
+    padding: 2rem;
+
+}
+
+section {
+    padding: 2rem;
+}
+
+hr {
+    margin: 1rem;
+}
+
+
+.list {
+    position: fixed;
+    top: 15rem;
+    display: flex;
+    width: 8rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+img {
+    position: fixed;
+    width: 7rem;
+    margin: 2rem;
+}
+
+.right_content {
+    background-color: rgb(43, 43, 43);
+    color: rgb(251, 251, 251);
+    padding: 8rem;
+    margin-bottom: 40rem;
+
+}
+
+.link {
+    color: #FF0000;
+}
+
+.link:hover {
+    color: #00FF00;
+}
+
+.linked {
+    color: #b3b3b1;
+}
+
+.linked:hover {
+    color: #77ff00;
+}
+
+
+footer {
+    display: flex;
+    color: rgb(205, 201, 201);
+    background-color: black;
+    position: fixed;
+    bottom: 0cm;
+    width: 100%;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: ;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    opacity: 0;
+    transition: opacity 2s;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 10%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        background: rgb(179, 178, 177);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_content {
+        background-color: black;
+        width: auto;
+        /* height: 60rem; */
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .right_content {
+        background-color: rgb(43, 43, 43);
+
+        padding: 1rem;
+
+    }
+
+    .list {
+        position: relative;
+        top: 1rem;
+        align-items: flex-start;
+    }
+
+    img {
+        position: relative;
+    }
+}
